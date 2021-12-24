@@ -1,19 +1,23 @@
 
 package application;
 
+import alljintraframe.AcademicProgrammApp;
+import alljintraframe.AccountApp;
 import alljintraframe.IntraLink1;
-import alljintraframe.AdminPanelDetails;
-import alljintraframe.AdminPanelDetails2;
 import alljintraframe.AdminPanelDetails3;
+import alljintraframe.DepartmentApplication;
+import alljintraframe.FecultyApplication;
 import alljintraframe.IntraLink3;
 import alljintraframe.IntraLink4;
 import alljintraframe.IntraLink5;
-import alljintraframe.IntraLink6;
 import alljintraframe.IntraLink7;
-import alljintraframe.LibraryManagement2;
 import alljintraframe.IntraLink9;
 import alljintraframe.LibraryManagement;
-import alljintraframe.Project;
+import alljintraframe.StudentApplication;
+import alljintraframe.SupportAndHelpApp;
+import alljintraframe.TeacherApplication;
+
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,7 +28,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
-import javax.swing.WindowConstants;
 
 public class Application extends javax.swing.JFrame {
                 Timer timer;
@@ -1050,9 +1053,9 @@ public class Application extends javax.swing.JFrame {
     }//GEN-LAST:event_minMouseClicked
 
     private void academicLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_academicLabelMouseClicked
-        IntraLink1 intra = new IntraLink1();
-        displayPane.add(intra);
-        intra.show();
+        AcademicProgrammApp acadp = new AcademicProgrammApp();
+        displayPane.add(acadp);
+        acadp.show();
         
     }//GEN-LAST:event_academicLabelMouseClicked
 
@@ -1063,33 +1066,35 @@ public class Application extends javax.swing.JFrame {
     }//GEN-LAST:event_adminLabelMouseClicked
 
     private void facultyLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_facultyLabelMouseClicked
-       IntraLink3 intra3 = new IntraLink3();
-        displayPane.add(intra3);
-        intra3.show();
+     FecultyApplication faclt = new FecultyApplication();
+     displayPane.add(faclt);
+     faclt.show();
     }//GEN-LAST:event_facultyLabelMouseClicked
 
     private void DepLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DepLabelMouseClicked
-        IntraLink4 intra4 = new IntraLink4();
-        displayPane.add(intra4);
-        intra4.show();
+        DepartmentApplication dep = new DepartmentApplication();
+        displayPane.add(dep);
+        dep.show();
     }//GEN-LAST:event_DepLabelMouseClicked
 
     private void teacherLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_teacherLabelMouseClicked
-        IntraLink5 intra5 = new IntraLink5();
-        displayPane.add(intra5);
-        intra5.show();
+       TeacherApplication tca = new TeacherApplication();
+       displayPane.add(tca);
+       tca.show();
+               
     }//GEN-LAST:event_teacherLabelMouseClicked
 
     private void studentLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studentLabelMouseClicked
-      StudentDisplayPage str = new StudentDisplayPage();
-        displayPane.add(str);
-        str.show();
+      StudentApplication studentapplication = new StudentApplication();
+      displayPane.add(studentapplication);
+      studentapplication.show();
+              
     }//GEN-LAST:event_studentLabelMouseClicked
 
     private void accountlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_accountlabelMouseClicked
-       IntraLink7 intra7 = new IntraLink7();
-        displayPane.add(intra7);
-        intra7.show();
+        AccountApp account = new AccountApp();
+        displayPane.add(account);
+        account.show();
     }//GEN-LAST:event_accountlabelMouseClicked
 
     private void libraryLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_libraryLabelMouseClicked
@@ -1099,9 +1104,10 @@ public class Application extends javax.swing.JFrame {
     }//GEN-LAST:event_libraryLabelMouseClicked
 
     private void sphLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sphLabelMouseClicked
-         IntraLink9 intra9 = new IntraLink9();
-        displayPane.add(intra9);
-        intra9.show();
+         SupportAndHelpApp spt = new SupportAndHelpApp();
+                 
+        displayPane.add(spt);
+        spt.show();
     }//GEN-LAST:event_sphLabelMouseClicked
 
     private void homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeMouseClicked
