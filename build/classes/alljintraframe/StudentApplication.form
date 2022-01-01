@@ -120,7 +120,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/project_icons/teacher_32px.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add Teacher"/>
+                <Property name="text" type="java.lang.String" value="Clss Schedule"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
                     <BevelBorder>
@@ -161,7 +161,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/project_icons/books_40px.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Create Faculty"/>
+                <Property name="text" type="java.lang.String" value="See All Student"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
                     <BevelBorder>
@@ -202,7 +202,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/project_icons/course_30px.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Create Course"/>
+                <Property name="text" type="java.lang.String" value=" Courses Detail"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
                     <BevelBorder>
@@ -423,7 +423,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/project_icons/student_registration_24px.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Create Department"/>
+                <Property name="text" type="java.lang.String" value="Result"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
                     <BevelBorder>

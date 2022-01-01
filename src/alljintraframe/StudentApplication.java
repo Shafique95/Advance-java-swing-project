@@ -253,7 +253,7 @@ public class StudentApplication extends javax.swing.JInternalFrame {
         jButton1.setBackground(new java.awt.Color(193, 249, 240));
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/teacher_32px.png"))); // NOI18N
-        jButton1.setText("Add Teacher");
+        jButton1.setText("Clss Schedule");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -270,7 +270,7 @@ public class StudentApplication extends javax.swing.JInternalFrame {
         jButton2.setBackground(new java.awt.Color(193, 249, 240));
         jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/books_40px.png"))); // NOI18N
-        jButton2.setText("Create Faculty");
+        jButton2.setText("See All Student");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -287,7 +287,7 @@ public class StudentApplication extends javax.swing.JInternalFrame {
         jButton3.setBackground(new java.awt.Color(193, 249, 240));
         jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_30px.png"))); // NOI18N
-        jButton3.setText("Create Course");
+        jButton3.setText(" Courses Detail");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -374,7 +374,7 @@ public class StudentApplication extends javax.swing.JInternalFrame {
         jButton12.setBackground(new java.awt.Color(193, 249, 240));
         jButton12.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/student_registration_24px.png"))); // NOI18N
-        jButton12.setText("Create Department");
+        jButton12.setText("Result");
         jButton12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

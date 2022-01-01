@@ -19,6 +19,8 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jPanel27 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox();
         jPanel8 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -63,31 +65,13 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jTextField25 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
         jPanel14 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
         jComboBox2 = new javax.swing.JComboBox();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
+        jButton5 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
@@ -233,18 +217,48 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
 
         jPanel7.setBackground(new java.awt.Color(0, 255, 255));
 
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/search_25px.png"))); // NOI18N
+        jLabel2.setText("Search");
+        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+
+        jComboBox7.setBackground(new java.awt.Color(240, 240, 240));
+        jComboBox7.setEditable(true);
+        jComboBox7.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-- Feculty --" }));
+        jComboBox7.setToolTipText("");
+        jComboBox7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jComboBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1010, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(720, Short.MAX_VALUE)
+                .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 1010, 30));
+        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 1010, 50));
 
         jPanel8.setBackground(new java.awt.Color(0, 214, 236));
         jPanel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -270,7 +284,7 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jButton2.setBackground(new java.awt.Color(193, 249, 240));
         jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/books_40px.png"))); // NOI18N
-        jButton2.setText("Create Faculty");
+        jButton2.setText(" View Faculty");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -287,7 +301,7 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jButton3.setBackground(new java.awt.Color(193, 249, 240));
         jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_30px.png"))); // NOI18N
-        jButton3.setText("Create Course");
+        jButton3.setText("All Feculty Member");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -598,16 +612,16 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(194, 194, 194)
+                .addGap(217, 217, 217)
                 .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(261, 261, 261))
+                .addGap(265, 265, 265))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(41, 41, 41)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tea", jPanel1);
@@ -615,67 +629,42 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jPanel2.setBackground(new java.awt.Color(0, 255, 255));
 
         jPanel13.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 51, 51), new java.awt.Color(0, 51, 51), new java.awt.Color(0, 51, 51), new java.awt.Color(0, 51, 51)));
         jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel12.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/orcid_32px.png"))); // NOI18N
-        jLabel12.setText("ID");
-        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel13.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 104, 44));
-
-        jTextField6.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField6.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 82, 252, 44));
-
-        jLabel13.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/f_32px.png"))); // NOI18N
-        jLabel13.setText("Name");
-        jLabel13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel13.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 104, 44));
-
-        jTextField7.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField7.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 145, 252, 44));
 
         jPanel14.setBackground(new java.awt.Color(193, 249, 240));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel19.setBackground(new java.awt.Color(193, 249, 240));
-        jLabel19.setFont(new java.awt.Font("Bernard MT Condensed", 1, 36)); // NOI18N
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
-        jLabel19.setText("Create New Faculty");
-        jPanel14.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 380, -1));
-
         jPanel13.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 419, -1));
 
-        jButton10.setBackground(new java.awt.Color(39, 227, 218));
-        jButton10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton10.setText("Create");
-        jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel13.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
+        jTable1.setBackground(new java.awt.Color(0, 214, 236));
+        jTable1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "ID", "Name", "Heade", "Total Subject"
+            }
+        ));
+        jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTable1.setGridColor(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel13.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1000, 780));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(290, Short.MAX_VALUE)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(285, 285, 285))
+                .addContainerGap()
+                .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(172, 172, 172)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(402, Short.MAX_VALUE))
+            .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("fac", jPanel2);
@@ -684,157 +673,41 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
 
         jPanel15.setBackground(new java.awt.Color(0, 255, 223));
 
-        jLabel15.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/good_pincode_32px.png"))); // NOI18N
-        jLabel15.setText("Code");
-        jLabel15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jTextField9.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField9.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField9.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel16.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
-        jLabel16.setText("Name");
-        jLabel16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jTextField10.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField10.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel17.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/c_32px2.png"))); // NOI18N
-        jLabel17.setText("Credit");
-        jLabel17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jTextField11.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField11.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField11.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jPanel16.setBackground(new java.awt.Color(193, 249, 240));
-        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel20.setBackground(new java.awt.Color(193, 249, 240));
-        jLabel20.setFont(new java.awt.Font("Bernard MT Condensed", 1, 36)); // NOI18N
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
-        jLabel20.setText("Create New Course");
-        jPanel16.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 380, -1));
-
-        jButton11.setBackground(new java.awt.Color(39, 227, 218));
-        jButton11.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton11.setText("Cteate");
-        jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel18.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/text_box_32px.png"))); // NOI18N
-        jLabel18.setText("Description");
-        jLabel18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jLabel21.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
-        jLabel21.setText("Department");
-        jLabel21.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jLabel22.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/plus_1_year_32px.png"))); // NOI18N
-        jLabel22.setText("Semester");
-        jLabel22.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-
-        jComboBox1.setBackground(new java.awt.Color(240, 240, 240));
-        jComboBox1.setEditable(true);
-        jComboBox1.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-- Semester--" }));
-        jComboBox1.setToolTipText("");
-
         jComboBox2.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox2.setEditable(true);
         jComboBox2.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-- Department --" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-- Feculty --" }));
         jComboBox2.setToolTipText("");
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
-        jTextArea5.setBackground(new java.awt.Color(240, 240, 240));
-        jTextArea5.setColumns(20);
-        jTextArea5.setRows(5);
-        jScrollPane5.setViewportView(jTextArea5);
+        jButton5.setBackground(new java.awt.Color(0, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/search_32px.png"))); // NOI18N
+        jButton5.setText("search");
+        jButton5.setBorder(null);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 461, Short.MAX_VALUE)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel18))
-                        .addGap(63, 63, 63)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10)
-                            .addComponent(jTextField9)
-                            .addComponent(jTextField11)
-                            .addComponent(jScrollPane5)))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton11)
-                .addGap(163, 163, 163))
+                .addContainerGap(569, Short.MAX_VALUE)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap()
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                    .addComponent(jComboBox1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addComponent(jButton11)
-                .addGap(24, 24, 24))
+                    .addComponent(jComboBox2)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
+                .addContainerGap(749, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -842,16 +715,16 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(282, Short.MAX_VALUE)
+                .addContainerGap(39, Short.MAX_VALUE)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(248, 248, 248))
+                .addGap(22, 22, 22))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(128, 128, 128)
-                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(158, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("cou", jPanel3);
@@ -1793,12 +1666,18 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox5ActionPerformed
 
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox7ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
@@ -1813,11 +1692,11 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox10;
     private javax.swing.JComboBox jComboBox11;
     private javax.swing.JComboBox jComboBox12;
@@ -1827,22 +1706,14 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox jComboBox4;
     private javax.swing.JComboBox jComboBox5;
     private javax.swing.JComboBox jComboBox6;
+    private javax.swing.JComboBox jComboBox7;
     private javax.swing.JComboBox jComboBox8;
     private javax.swing.JComboBox jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -1909,7 +1780,6 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
@@ -1937,20 +1807,18 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JPasswordField jPasswordField2;
-    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
@@ -1989,9 +1857,6 @@ public class FecultyApplication extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField52;
     private javax.swing.JTextField jTextField53;
     private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

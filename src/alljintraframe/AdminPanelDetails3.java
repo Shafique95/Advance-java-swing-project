@@ -34,6 +34,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jButton17 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jButton15 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
@@ -70,6 +71,10 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel14 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
+        jTextField32 = new javax.swing.JTextField();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jTextField33 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
@@ -213,6 +218,19 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jScrollPane7 = new javax.swing.JScrollPane();
         jTextArea7 = new javax.swing.JTextArea();
         jTextField28 = new javax.swing.JTextField();
+        jPanel25 = new javax.swing.JPanel();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        jTextField24 = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
+        jTextField30 = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        jTextField31 = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        jPasswordField3 = new javax.swing.JPasswordField();
+        jPanel29 = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        jButton19 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
         jPanel27.setLayout(jPanel27Layout);
@@ -237,14 +255,14 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1010, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 1010, 30));
+        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, 650, 30));
 
         jPanel8.setBackground(new java.awt.Color(0, 214, 236));
         jPanel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -265,7 +283,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 220, 40));
+        jPanel8.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 220, 40));
 
         jButton2.setBackground(new java.awt.Color(193, 249, 240));
         jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -282,7 +300,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 220, 40));
+        jPanel8.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 220, 40));
 
         jButton3.setBackground(new java.awt.Color(193, 249, 240));
         jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -298,7 +316,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 220, 40));
+        jPanel8.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 220, 40));
 
         jButton4.setBackground(new java.awt.Color(193, 249, 240));
         jButton4.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -315,7 +333,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 220, 40));
+        jPanel8.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 220, 40));
 
         jButton6.setBackground(new java.awt.Color(193, 249, 240));
         jButton6.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -330,7 +348,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 220, 40));
+        jPanel8.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 220, 40));
 
         jButton7.setBackground(new java.awt.Color(193, 249, 240));
         jButton7.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -345,7 +363,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 220, 40));
+        jPanel8.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 220, 40));
 
         jButton8.setBackground(new java.awt.Color(193, 249, 240));
         jButton8.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -362,7 +380,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 220, 50));
+        jPanel8.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, 220, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/dashboard_layout_125px.png"))); // NOI18N
         jPanel8.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 90));
@@ -386,7 +404,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 220, 40));
+        jPanel8.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 220, 40));
 
         jButton14.setBackground(new java.awt.Color(193, 249, 240));
         jButton14.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -403,7 +421,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 220, 40));
+        jPanel8.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 220, 40));
 
         jButton17.setBackground(new java.awt.Color(0, 214, 236));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/environment_care_125px.png"))); // NOI18N
@@ -413,18 +431,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 680, 140, 100));
+        jPanel8.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 670, 140, 100));
 
         jSeparator2.setBackground(new java.awt.Color(10, 4, 37));
-        jPanel8.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 810, 170, 20));
+        jPanel8.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 780, 170, 10));
 
         jButton15.setBackground(new java.awt.Color(193, 249, 240));
         jButton15.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/maintenance_48px.png"))); // NOI18N
-        jButton15.setText("Staff");
+        jButton15.setText("Add university Staff");
         jButton15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
         jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton15.setIconTextGap(15);
         jButton15.setPreferredSize(new java.awt.Dimension(161, 37));
@@ -433,7 +449,23 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 jButton15ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 220, 50));
+        jPanel8.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 220, 40));
+
+        jButton5.setBackground(new java.awt.Color(193, 249, 240));
+        jButton5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/flying_mortarboard_30px.png"))); // NOI18N
+        jButton5.setText("Academic Programm");
+        jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153)));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButton5.setIconTextGap(15);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 220, 40));
 
         jPanel5.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 860));
 
@@ -445,10 +477,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/user_32px.png"))); // NOI18N
         jLabel3.setText("Name");
-        jLabel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 104, 44));
+        jPanel11.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 230, 44));
 
         jTextField1.setBackground(new java.awt.Color(240, 240, 240));
         jTextField1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -457,10 +487,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 80, 320, 44));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/At sign_32px.png"))); // NOI18N
         jLabel4.setText("Email");
-        jLabel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 104, 44));
+        jPanel11.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 230, 44));
 
         jTextField2.setBackground(new java.awt.Color(240, 240, 240));
         jTextField2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -469,10 +497,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 140, 320, 44));
 
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/User Locked_32px.png"))); // NOI18N
         jLabel5.setText("User Name");
-        jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 155, 44));
+        jPanel11.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 230, 44));
 
         jTextField3.setBackground(new java.awt.Color(240, 240, 240));
         jTextField3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -481,22 +507,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 320, 44));
 
         jLabel6.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/password_reset_32px.png"))); // NOI18N
         jLabel6.setText("Teacher ID");
-        jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 255, 155, 44));
+        jPanel11.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 255, 230, 44));
 
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/send_hot_list_32px.png"))); // NOI18N
         jLabel7.setText("Address");
-        jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 326, 155, 44));
+        jPanel11.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 326, 230, 44));
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/phone_32px.png"))); // NOI18N
         jLabel8.setText("Contact");
-        jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 406, 129, 44));
+        jPanel11.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 406, 230, 44));
 
         jTextField4.setBackground(new java.awt.Color(240, 240, 240));
         jTextField4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -505,10 +525,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 400, 320, 44));
 
         jLabel9.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/birth_date_32px.png"))); // NOI18N
         jLabel9.setText("D.O.B");
-        jLabel9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 461, 104, 44));
+        jPanel11.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 461, 230, 44));
 
         jTextField5.setBackground(new java.awt.Color(240, 240, 240));
         jTextField5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -529,9 +547,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 18, 393, -1));
 
         jLabel11.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/cooking_book_32px.png"))); // NOI18N
         jLabel11.setText("Credit to be Taken");
-        jLabel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel11.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 614, 230, 44));
 
         jButton9.setBackground(new java.awt.Color(39, 227, 218));
@@ -542,16 +558,12 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel11.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 670, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/teacher_32px.png"))); // NOI18N
         jLabel14.setText("Designation");
-        jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 512, 172, 44));
+        jPanel11.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 512, 230, 44));
 
         jLabel45.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel45.setText("Department");
-        jLabel45.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
-        jPanel11.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 563, 172, 44));
+        jPanel11.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 563, 230, 44));
 
         jComboBox3.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox3.setEditable(true);
@@ -619,9 +631,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/orcid_32px.png"))); // NOI18N
         jLabel12.setText("ID");
-        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
         jPanel13.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 104, 44));
 
         jTextField6.setBackground(new java.awt.Color(240, 240, 240));
@@ -631,9 +641,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 82, 252, 44));
 
         jLabel13.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/f_32px.png"))); // NOI18N
         jLabel13.setText("Name");
-        jLabel13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
         jPanel13.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 104, 44));
 
         jTextField7.setBackground(new java.awt.Color(240, 240, 240));
@@ -649,7 +657,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel19.setFont(new java.awt.Font("Bernard MT Condensed", 1, 36)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
-        jLabel19.setText("Create New Faculty");
+        jLabel19.setText("Add New Faculty");
         jPanel14.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 380, -1));
 
         jPanel13.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 419, -1));
@@ -659,7 +667,27 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
         jButton10.setText("Create");
         jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel13.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
+        jPanel13.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
+
+        jTextField32.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField32.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jTextField32.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 252, 44));
+
+        jLabel51.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel51.setText("Feculty Head");
+        jPanel13.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 44));
+
+        jLabel53.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel53.setText("Subject");
+        jPanel13.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, 44));
+
+        jTextField33.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField33.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jTextField33.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 252, 44));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -674,8 +702,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(172, 172, 172)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(402, Short.MAX_VALUE))
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(259, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("fac", jPanel2);
@@ -685,9 +713,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel15.setBackground(new java.awt.Color(0, 255, 223));
 
         jLabel15.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/good_pincode_32px.png"))); // NOI18N
         jLabel15.setText("Code");
-        jLabel15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField9.setBackground(new java.awt.Color(240, 240, 240));
         jTextField9.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -695,9 +721,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel16.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
         jLabel16.setText("Name");
-        jLabel16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField10.setBackground(new java.awt.Color(240, 240, 240));
         jTextField10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -705,9 +729,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jTextField10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel17.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/c_32px2.png"))); // NOI18N
         jLabel17.setText("Credit");
-        jLabel17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField11.setBackground(new java.awt.Color(240, 240, 240));
         jTextField11.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -731,19 +753,13 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel18.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/text_box_32px.png"))); // NOI18N
         jLabel18.setText("Description");
-        jLabel18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jLabel21.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel21.setText("Department");
-        jLabel21.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jLabel22.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/plus_1_year_32px.png"))); // NOI18N
         jLabel22.setText("Semester");
-        jLabel22.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jComboBox1.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox1.setEditable(true);
@@ -776,22 +792,18 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
                                 .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel18))
+                            .addComponent(jLabel18)
+                            .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(63, 63, 63)
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField10)
                             .addComponent(jTextField9)
                             .addComponent(jTextField11)
-                            .addComponent(jScrollPane5)))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(jScrollPane5)
+                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -825,13 +837,15 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                    .addComponent(jComboBox1))
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(jButton11)
                 .addGap(24, 24, 24))
@@ -862,9 +876,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/user_32px.png"))); // NOI18N
         jLabel23.setText("Labe ID");
-        jLabel23.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel17.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 190, 44));
 
         jTextField12.setBackground(new java.awt.Color(240, 240, 240));
@@ -874,9 +886,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel17.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 355, 44));
 
         jLabel24.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/At sign_32px.png"))); // NOI18N
         jLabel24.setText("Lab Name");
-        jLabel24.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel17.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 190, 44));
 
         jTextField13.setBackground(new java.awt.Color(240, 240, 240));
@@ -886,9 +896,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel17.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 355, 44));
 
         jLabel25.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/User Locked_32px.png"))); // NOI18N
         jLabel25.setText("Lab Type");
-        jLabel25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel17.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 190, 44));
 
         jTextField14.setBackground(new java.awt.Color(240, 240, 240));
@@ -898,9 +906,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel17.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 355, 44));
 
         jLabel26.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/password_reset_32px.png"))); // NOI18N
         jLabel26.setText("Lab Employee");
-        jLabel26.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel17.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 255, 190, 44));
 
         jPasswordField2.setBackground(new java.awt.Color(240, 240, 240));
@@ -909,9 +915,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel17.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 355, 44));
 
         jLabel28.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/phone_32px.png"))); // NOI18N
         jLabel28.setText("Contact");
-        jLabel28.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel17.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 190, 44));
 
         jTextField15.setBackground(new java.awt.Color(240, 240, 240));
@@ -964,9 +968,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/lab_items_30px.png"))); // NOI18N
         jLabel36.setText("Name");
-        jLabel36.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 190, 44));
 
         jTextField20.setBackground(new java.awt.Color(240, 240, 240));
@@ -976,9 +978,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel23.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 315, 44));
 
         jLabel37.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/product_32px.png"))); // NOI18N
         jLabel37.setText("Type");
-        jLabel37.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 190, 44));
 
         jTextField21.setBackground(new java.awt.Color(240, 240, 240));
@@ -988,9 +988,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel23.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 315, 44));
 
         jLabel38.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/estimates_32px.png"))); // NOI18N
         jLabel38.setText("Quantity");
-        jLabel38.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 190, 44));
 
         jTextField22.setBackground(new java.awt.Color(240, 240, 240));
@@ -1000,21 +998,15 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel23.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 315, 44));
 
         jLabel39.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/pay_date_32px.png"))); // NOI18N
         jLabel39.setText("Date");
-        jLabel39.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 255, 190, 44));
 
         jLabel40.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/send_hot_list_32px.png"))); // NOI18N
         jLabel40.setText("Cost");
-        jLabel40.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 316, 190, 44));
 
         jLabel41.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/product_32px.png"))); // NOI18N
         jLabel41.setText("Assing To Lab");
-        jLabel41.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel23.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 190, 44));
 
         jTextField23.setBackground(new java.awt.Color(240, 240, 240));
@@ -1080,16 +1072,12 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel31.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel67.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/teacher_32px.png"))); // NOI18N
         jLabel67.setText("Teacher");
-        jLabel67.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel31.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 158, 44));
+        jPanel31.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 230, 44));
 
         jLabel68.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/c_32px2.png"))); // NOI18N
         jLabel68.setText("Credit");
-        jLabel68.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel31.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 158, 44));
+        jPanel31.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 230, 44));
 
         jTextField39.setBackground(new java.awt.Color(240, 240, 240));
         jTextField39.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1117,10 +1105,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel31.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 540, -1, -1));
 
         jLabel71.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel71.setText("Department");
-        jLabel71.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel31.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, 44));
+        jPanel31.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 230, 44));
 
         jComboBox8.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox8.setEditable(true);
@@ -1137,10 +1123,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel31.add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 240, 45));
 
         jLabel73.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
         jLabel73.setText(" Course Code");
-        jLabel73.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel31.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, 44));
+        jPanel31.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 230, 44));
 
         jComboBox10.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox10.setEditable(true);
@@ -1156,22 +1140,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel31.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, 240, 44));
 
         jLabel74.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/cooking_book_32px.png"))); // NOI18N
         jLabel74.setText("Credit to be Taken");
-        jLabel74.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel31.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 230, 44));
 
         jLabel75.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/cooking_book_32px.png"))); // NOI18N
         jLabel75.setText("Remaining Credit");
-        jLabel75.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel31.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 230, 44));
 
         jLabel76.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
         jLabel76.setText(" Course Name");
-        jLabel76.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel31.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, 44));
+        jPanel31.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 230, 44));
 
         jTextField41.setBackground(new java.awt.Color(240, 240, 240));
         jTextField41.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1220,10 +1198,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel37.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, -1, -1));
 
         jLabel91.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/student_male_32px.png"))); // NOI18N
         jLabel91.setText("Student Id");
-        jLabel91.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel37.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, 44));
+        jPanel37.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 230, 44));
 
         jComboBox12.setBackground(new java.awt.Color(240, 240, 240));
         jComboBox12.setEditable(true);
@@ -1240,10 +1216,8 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel37.add(jComboBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 240, 45));
 
         jLabel92.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
         jLabel92.setText(" Course Code");
-        jLabel92.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel37.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 44));
+        jPanel37.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 230, 44));
 
         jTextField53.setBackground(new java.awt.Color(240, 240, 240));
         jTextField53.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1252,22 +1226,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel37.add(jTextField53, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 240, 44));
 
         jLabel93.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/cooking_book_32px.png"))); // NOI18N
         jLabel93.setText("Credit to be Taken");
-        jLabel93.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel37.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 230, 44));
 
         jLabel94.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/cooking_book_32px.png"))); // NOI18N
         jLabel94.setText("Remaining Credit");
-        jLabel94.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel37.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 230, 44));
 
         jLabel95.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/course_32px.png"))); // NOI18N
         jLabel95.setText(" Course Name");
-        jLabel95.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
-        jPanel37.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, 44));
+        jPanel37.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 230, 44));
 
         jTextField54.setBackground(new java.awt.Color(240, 240, 240));
         jTextField54.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1299,9 +1267,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel35.setBackground(new java.awt.Color(0, 255, 255));
 
         jLabel84.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel84.setText("ID");
-        jLabel84.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField49.setBackground(new java.awt.Color(240, 240, 240));
         jTextField49.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1309,9 +1275,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jTextField49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel85.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel85.setText("Name");
-        jLabel85.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField50.setBackground(new java.awt.Color(240, 240, 240));
         jTextField50.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1319,9 +1283,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jTextField50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel86.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel86.setText("Head");
-        jLabel86.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 153, 153), new java.awt.Color(0, 102, 102)));
 
         jTextField51.setBackground(new java.awt.Color(240, 240, 240));
         jTextField51.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1415,9 +1377,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel66.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/user_32px.png"))); // NOI18N
         jLabel66.setText("Name");
-        jLabel66.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 220, 44));
 
         jTextField38.setBackground(new java.awt.Color(240, 240, 240));
@@ -1427,9 +1387,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jTextField38, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 80, 320, 44));
 
         jLabel70.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/At sign_32px.png"))); // NOI18N
         jLabel70.setText("Email");
-        jLabel70.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 220, 44));
 
         jTextField43.setBackground(new java.awt.Color(240, 240, 240));
@@ -1439,9 +1397,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 320, 44));
 
         jLabel72.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/User Locked_32px.png"))); // NOI18N
         jLabel72.setText("User Name");
-        jLabel72.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 220, 44));
 
         jTextField44.setBackground(new java.awt.Color(240, 240, 240));
@@ -1451,21 +1407,15 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jTextField44, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 320, 44));
 
         jLabel77.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/password_reset_32px.png"))); // NOI18N
         jLabel77.setText("Student Id");
-        jLabel77.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 230, 44));
 
         jLabel78.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/send_hot_list_32px.png"))); // NOI18N
         jLabel78.setText("Address");
-        jLabel78.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 230, 44));
 
         jLabel79.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/phone_32px.png"))); // NOI18N
         jLabel79.setText("Phone");
-        jLabel79.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 230, 44));
 
         jTextField45.setBackground(new java.awt.Color(240, 240, 240));
@@ -1475,9 +1425,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jTextField45, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 320, 44));
 
         jLabel80.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/birth_date_32px.png"))); // NOI18N
         jLabel80.setText("D.O.B");
-        jLabel80.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 500, 230, 44));
 
         jTextField46.setBackground(new java.awt.Color(240, 240, 240));
@@ -1499,9 +1447,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jPanel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 380, -1));
 
         jLabel82.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/books_emoji_32px.png"))); // NOI18N
         jLabel82.setText("Credit to be Taken");
-        jLabel82.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 230, 44));
 
         jButton21.setBackground(new java.awt.Color(39, 227, 218));
@@ -1512,9 +1458,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel33.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 680, -1, -1));
 
         jLabel83.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel83.setText("Department");
-        jLabel83.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel33.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, 230, 44));
 
         jComboBox11.setBackground(new java.awt.Color(240, 240, 240));
@@ -1570,9 +1514,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel27.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/user_32px.png"))); // NOI18N
         jLabel27.setText("Name");
-        jLabel27.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 190, 44));
 
         jTextField16.setBackground(new java.awt.Color(240, 240, 240));
@@ -1582,9 +1524,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 80, 320, 44));
 
         jLabel29.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/At sign_32px.png"))); // NOI18N
         jLabel29.setText("Email");
-        jLabel29.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 190, 44));
 
         jTextField17.setBackground(new java.awt.Color(240, 240, 240));
@@ -1594,9 +1534,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 140, 320, 44));
 
         jLabel31.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/User Locked_32px.png"))); // NOI18N
         jLabel31.setText("User Name");
-        jLabel31.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 190, 44));
 
         jTextField18.setBackground(new java.awt.Color(240, 240, 240));
@@ -1606,21 +1544,15 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 320, 44));
 
         jLabel32.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/password_reset_32px.png"))); // NOI18N
         jLabel32.setText("Employees ID");
-        jLabel32.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 255, 190, 44));
 
         jLabel33.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/send_hot_list_32px.png"))); // NOI18N
         jLabel33.setText("Address");
-        jLabel33.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 326, 190, 44));
 
         jLabel34.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/phone_32px.png"))); // NOI18N
         jLabel34.setText("Contact");
-        jLabel34.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 406, 190, 44));
 
         jTextField19.setBackground(new java.awt.Color(240, 240, 240));
@@ -1630,9 +1562,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 400, 320, 44));
 
         jLabel35.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/birth_date_32px.png"))); // NOI18N
         jLabel35.setText("D.O.B");
-        jLabel35.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 461, 190, 44));
 
         jPanel22.setBackground(new java.awt.Color(193, 249, 240));
@@ -1655,15 +1585,11 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel21.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 630, -1, -1));
 
         jLabel48.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/teacher_32px.png"))); // NOI18N
         jLabel48.setText("Designation");
-        jLabel48.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 512, 190, 44));
 
         jLabel49.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/department_32px.png"))); // NOI18N
         jLabel49.setText("Department");
-        jLabel49.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102), new java.awt.Color(0, 102, 102)));
         jPanel21.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 563, 190, 44));
 
         jComboBox5.setBackground(new java.awt.Color(240, 240, 240));
@@ -1724,6 +1650,88 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         );
 
         jTabbedPane1.addTab("tab10", jPanel19);
+
+        jPanel25.setBackground(new java.awt.Color(0, 255, 255));
+
+        jPanel26.setBackground(new java.awt.Color(0, 255, 223));
+        jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel42.setText("Programm ID");
+        jPanel26.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 190, 44));
+
+        jTextField24.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField24.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jTextField24.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel26.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 355, 44));
+
+        jLabel44.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel44.setText("Name");
+        jPanel26.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 190, 44));
+
+        jTextField30.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField30.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jTextField30.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel26.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 355, 44));
+
+        jLabel47.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel47.setText("Type");
+        jPanel26.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 202, 190, 44));
+
+        jTextField31.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField31.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jTextField31.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel26.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 355, 44));
+
+        jLabel50.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel50.setText("Date");
+        jPanel26.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 190, 44));
+
+        jPasswordField3.setBackground(new java.awt.Color(240, 240, 240));
+        jPasswordField3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jPasswordField3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel26.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 355, 44));
+
+        jPanel29.setBackground(new java.awt.Color(193, 249, 240));
+        jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setBackground(new java.awt.Color(193, 249, 240));
+        jLabel52.setFont(new java.awt.Font("Bernard MT Condensed", 1, 36)); // NOI18N
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
+        jLabel52.setText("Add New Programm");
+        jPanel29.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, -1));
+
+        jPanel26.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 393, -1));
+
+        jButton19.setBackground(new java.awt.Color(39, 227, 218));
+        jButton19.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
+        jButton19.setText("Submit");
+        jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel26.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, -1, -1));
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
+                .addContainerGap(204, Short.MAX_VALUE)
+                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, 616, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(195, 195, 195))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(135, 135, 135)
+                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("acap", jPanel25);
 
         jPanel5.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 1020, 860));
 
@@ -1793,6 +1801,10 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox5ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        jTabbedPane1.setSelectedIndex(10);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
@@ -1806,6 +1818,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
@@ -1813,6 +1826,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1864,12 +1878,19 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
@@ -1919,8 +1940,11 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel32;
@@ -1937,6 +1961,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JPasswordField jPasswordField3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
@@ -1964,12 +1989,17 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField4;
