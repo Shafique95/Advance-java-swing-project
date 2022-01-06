@@ -23,52 +23,36 @@ public class UniversityDbLoadingpag extends javax.swing.JFrame {
         loadingBar = new javax.swing.JProgressBar();
         percentageShow = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
         loading = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         backgroundImage = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
-        background.setBackground(new java.awt.Color(0, 0, 51));
+        background.setBackground(new java.awt.Color(0, 0, 0));
         background.setPreferredSize(new java.awt.Dimension(900, 500));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         loadingBar.setBackground(new java.awt.Color(0, 0, 51));
         loadingBar.setForeground(new java.awt.Color(255, 255, 255));
-        loadingBar.setBorder(null);
-        background.add(loadingBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 750, 1030, 20));
+        background.add(loadingBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 640, 740, 10));
 
         percentageShow.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         percentageShow.setForeground(new java.awt.Color(255, 255, 255));
         percentageShow.setText("0.0%");
-        background.add(percentageShow, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 720, -1, -1));
+        background.add(percentageShow, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 610, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Harrington", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Top University Of Bangladesh");
-        background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 640, 630, 60));
-
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 770, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 5, Short.MAX_VALUE)
-        );
-
-        background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 630, 770, 5));
+        background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, 640, 60));
 
         loading.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         loading.setForeground(new java.awt.Color(255, 255, 255));
         loading.setText("Loading");
-        background.add(loading, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 720, -1, -1));
+        background.add(loading, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -80,22 +64,23 @@ public class UniversityDbLoadingpag extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/user_login2_icon/university Logo2.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 178, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 178, -1));
 
-        background.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 690, 540));
+        background.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 700, 520));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 1030, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 667, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(760, 667));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
  
     public static void main(String args[]) {
@@ -105,7 +90,7 @@ public class UniversityDbLoadingpag extends javax.swing.JFrame {
        
         try {
             for (int i = 0; i < 100; i++) {
-                Thread.sleep(60);
+                Thread.sleep(10);
                 sp.loadingBar.setValue(i);
                 sp.percentageShow.setText(Integer.toString(i) + " %");
                 sp.loading.setText("Database Loading..." + -i); 
@@ -122,7 +107,6 @@ public class UniversityDbLoadingpag extends javax.swing.JFrame {
     private javax.swing.JLabel backgroundImage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel loading;
     private javax.swing.JProgressBar loadingBar;

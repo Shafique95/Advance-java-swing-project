@@ -2,7 +2,13 @@
 package alljintraframe;
 
 import application.*;
+import com.adv.util.DBConnection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JInternalFrame;
+import javax.swing.JOptionPane;
 
 
 public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
@@ -65,16 +71,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        fId = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        fName = new javax.swing.JTextField();
         jPanel14 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
-        jTextField32 = new javax.swing.JTextField();
+        createFaculty = new javax.swing.JButton();
+        fHead = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
-        jTextField33 = new javax.swing.JTextField();
+        fSubject = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
@@ -162,14 +168,16 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel20 = new javax.swing.JPanel();
         jPanel35 = new javax.swing.JPanel();
         jLabel84 = new javax.swing.JLabel();
-        jTextField49 = new javax.swing.JTextField();
+        did = new javax.swing.JTextField();
         jLabel85 = new javax.swing.JLabel();
-        jTextField50 = new javax.swing.JTextField();
+        dName = new javax.swing.JTextField();
         jLabel86 = new javax.swing.JLabel();
-        jTextField51 = new javax.swing.JTextField();
+        dHead = new javax.swing.JTextField();
         jPanel36 = new javax.swing.JPanel();
         jLabel87 = new javax.swing.JLabel();
-        jButton22 = new javax.swing.JButton();
+        departmentBtn = new javax.swing.JButton();
+        jLabel88 = new javax.swing.JLabel();
+        dSubject = new javax.swing.JTextField();
         jPanel28 = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
         jLabel66 = new javax.swing.JLabel();
@@ -255,14 +263,14 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGap(0, 1010, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, 650, 30));
+        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 1010, 30));
 
         jPanel8.setBackground(new java.awt.Color(0, 214, 236));
         jPanel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -634,21 +642,21 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel12.setText("ID");
         jPanel13.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 81, 104, 44));
 
-        jTextField6.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField6.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 82, 252, 44));
+        fId.setBackground(new java.awt.Color(240, 240, 240));
+        fId.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        fId.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        fId.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(fId, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 82, 252, 44));
 
         jLabel13.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel13.setText("Name");
         jPanel13.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 144, 104, 44));
 
-        jTextField7.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField7.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 145, 252, 44));
+        fName.setBackground(new java.awt.Color(240, 240, 240));
+        fName.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        fName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        fName.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(fName, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 145, 252, 44));
 
         jPanel14.setBackground(new java.awt.Color(193, 249, 240));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -662,18 +670,23 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
 
         jPanel13.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 419, -1));
 
-        jButton10.setBackground(new java.awt.Color(39, 227, 218));
-        jButton10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton10.setText("Create");
-        jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel13.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
+        createFaculty.setBackground(new java.awt.Color(39, 227, 218));
+        createFaculty.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        createFaculty.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
+        createFaculty.setText("Create");
+        createFaculty.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        createFaculty.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createFacultyActionPerformed(evt);
+            }
+        });
+        jPanel13.add(createFaculty, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
 
-        jTextField32.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField32.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField32.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 252, 44));
+        fHead.setBackground(new java.awt.Color(240, 240, 240));
+        fHead.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        fHead.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        fHead.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(fHead, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 252, 44));
 
         jLabel51.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel51.setText("Feculty Head");
@@ -683,11 +696,11 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel53.setText("Subject");
         jPanel13.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, 44));
 
-        jTextField33.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField33.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField33.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel13.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 252, 44));
+        fSubject.setBackground(new java.awt.Color(240, 240, 240));
+        fSubject.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        fSubject.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        fSubject.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel13.add(fSubject, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 252, 44));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -939,7 +952,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jButton13.setBackground(new java.awt.Color(39, 227, 218));
         jButton13.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton13.setText("Submit");
+        jButton13.setText("Create Lab");
         jButton13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel17.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, -1, -1));
 
@@ -1032,7 +1045,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
         jButton16.setText("Submit");
         jButton16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel23.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
+        jPanel23.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 130, -1));
 
         jTextField26.setBackground(new java.awt.Color(240, 240, 240));
         jTextField26.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -1269,26 +1282,26 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel84.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel84.setText("ID");
 
-        jTextField49.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField49.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField49.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        did.setBackground(new java.awt.Color(240, 240, 240));
+        did.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        did.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        did.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel85.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel85.setText("Name");
 
-        jTextField50.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField50.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField50.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dName.setBackground(new java.awt.Color(240, 240, 240));
+        dName.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        dName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        dName.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel86.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel86.setText("Head");
 
-        jTextField51.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField51.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jTextField51.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dHead.setBackground(new java.awt.Color(240, 240, 240));
+        dHead.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        dHead.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        dHead.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jPanel36.setBackground(new java.awt.Color(193, 249, 240));
         jPanel36.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1298,13 +1311,26 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel87.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
         jLabel87.setText("Create New Department");
-        jPanel36.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 50));
+        jPanel36.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 50));
 
-        jButton22.setBackground(new java.awt.Color(39, 227, 218));
-        jButton22.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton22.setText("Create");
-        jButton22.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        departmentBtn.setBackground(new java.awt.Color(39, 227, 218));
+        departmentBtn.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        departmentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
+        departmentBtn.setText("Create");
+        departmentBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        departmentBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                departmentBtnActionPerformed(evt);
+            }
+        });
+
+        jLabel88.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel88.setText("Subject");
+
+        dSubject.setBackground(new java.awt.Color(240, 240, 240));
+        dSubject.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        dSubject.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        dSubject.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
         jPanel35.setLayout(jPanel35Layout);
@@ -1313,7 +1339,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
             .addGroup(jPanel35Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 513, Short.MAX_VALUE)
                     .addGroup(jPanel35Layout.createSequentialGroup()
                         .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1321,14 +1347,21 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                             .addComponent(jLabel85, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
                         .addGap(63, 63, 63)
                         .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField50)
-                            .addComponent(jTextField49)
-                            .addComponent(jTextField51))))
+                            .addComponent(dName)
+                            .addComponent(did)
+                            .addComponent(dHead)
+                            .addGroup(jPanel35Layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(departmentBtn)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
-            .addGroup(jPanel35Layout.createSequentialGroup()
-                .addGap(154, 154, 154)
-                .addComponent(jButton22)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel35Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel88, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(dSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
         jPanel35Layout.setVerticalGroup(
             jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1338,18 +1371,25 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(did, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(dName, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton22)
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(dHead, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                .addComponent(departmentBtn)
+                .addGap(34, 34, 34))
+            .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel35Layout.createSequentialGroup()
+                    .addContainerGap(285, Short.MAX_VALUE)
+                    .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(dSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(92, 92, 92)))
         );
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
@@ -1357,7 +1397,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                .addContainerGap(277, Short.MAX_VALUE)
+                .addContainerGap(194, Short.MAX_VALUE)
                 .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(284, 284, 284))
         );
@@ -1366,7 +1406,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
             .addGroup(jPanel20Layout.createSequentialGroup()
                 .addGap(195, 195, 195)
                 .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(312, Short.MAX_VALUE))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("dp", jPanel20);
@@ -1703,14 +1743,14 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/account_50px.png"))); // NOI18N
         jLabel52.setText("Add New Programm");
-        jPanel29.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, -1));
+        jPanel29.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, -1));
 
-        jPanel26.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 393, -1));
+        jPanel26.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 430, -1));
 
         jButton19.setBackground(new java.awt.Color(39, 227, 218));
         jButton19.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_icons/email_send_32px.png"))); // NOI18N
-        jButton19.setText("Submit");
+        jButton19.setText("Create Programm");
         jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel26.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, -1, -1));
 
@@ -1804,12 +1844,84 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         jTabbedPane1.setSelectedIndex(10);
     }//GEN-LAST:event_jButton5ActionPerformed
+ // Add Faculty
+    private void createFacultyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createFacultyActionPerformed
+        String facultyId = fId.getText();
+        String facultyName = fName.getText();
+        String facultyHead = fHead.getText();
+        String facultySubject = fSubject.getText();
+           System.out.println(facultyName + facultyId +facultyHead+facultySubject);
+           String sql = "Insert into faculty(id, faculty_name,faculty_head,faculty_subject) Values (?,?,?,?)";
+        try {
+            PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
+            ps.setString(1, facultyId);
+            ps.setString(2, facultyName);
+            ps.setString(3, facultySubject);
+            ps.setString(4, facultyHead);
+            int status = ps.executeUpdate();
+            if (status > 0) {
+                JOptionPane.showMessageDialog(rootPane, "You are the Member");
+            } else {
 
+                JOptionPane.showMessageDialog(rootPane, "Fill It", "Wrong", 2);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(AdminPanelDetails3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        clearField();
+               
+    }//GEN-LAST:event_createFacultyActionPerformed
+      void clearField() {
+        fId.setText("");
+        fName.setText("");
+        fHead.setText("");
+        fSubject.setText("");
+        
+    }
+    // add Department
+    private void departmentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentBtnActionPerformed
+        String departmentId = did.getText();
+        String departmentName = fName.getText();
+        String departmentHead = dHead.getText();
+        String departmentSubject = dSubject.getText();
+        System.out.println(departmentId+departmentName+ departmentHead+ departmentSubject);
+        String sql = "Insert into department(did, d_name,d_head,d_subject) Values (?,?,?,?)";
+        try {
+            PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
+            ps.setString(1, departmentId);
+            ps.setString(2, departmentName);
+            ps.setString(3, departmentHead);
+            ps.setString(4, departmentSubject);
+            int status = ps.executeUpdate();
+            if (status > 0) {
+                JOptionPane.showMessageDialog(rootPane, "You are the Member");
+            } else {
+
+                JOptionPane.showMessageDialog(rootPane, "Fill It", "Wrong", 2);
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(AdminPanelDetails3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+    }//GEN-LAST:event_departmentBtnActionPerformed
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton createFaculty;
+    private javax.swing.JTextField dHead;
+    private javax.swing.JTextField dName;
+    private javax.swing.JTextField dSubject;
+    private javax.swing.JButton departmentBtn;
+    private javax.swing.JTextField did;
+    private javax.swing.JTextField fHead;
+    private javax.swing.JTextField fId;
+    private javax.swing.JTextField fName;
+    private javax.swing.JTextField fSubject;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
@@ -1822,7 +1934,6 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1916,6 +2027,7 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
@@ -1998,8 +2110,6 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField4;
@@ -2012,15 +2122,10 @@ public class AdminPanelDetails3 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField46;
     private javax.swing.JTextField jTextField47;
     private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField52;
     private javax.swing.JTextField jTextField53;
     private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
