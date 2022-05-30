@@ -13,4 +13,4 @@
 ![profile](https://github.com/Shafique95/Advance-java-swing-project/blob/master/StudentPanel.PNG)
 # 7.This is the Student Panel  page of this project
 ![profile](https://github.com/Shafique95/Advance-java-swing-project/blob/master/StudentPanel.PNG)
-#### To run this project need Netbeans 8.2/ Eclips /intellij idea but it was designed in Netbeans
+## To run this project need Netbeans 8.2/ Eclips /intellij idea but it was designed in Netbeans
